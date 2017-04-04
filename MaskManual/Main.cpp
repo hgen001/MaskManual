@@ -96,8 +96,11 @@ int main() {
 		Mat masked(frame.size(), CV_8UC3, Scalar(255, 255, 255));
 		frame.copyTo(masked, mask);
 		imshow("masked", masked);//Show the mask
-		
-		
+
+		//The bag of word part
+		//...
+		//...
+		//...
 		cv::imshow("Frame", frame);
 		ExitKey = cv::waitKey(1);
 		printf("Time taken: %.5fs\n", (double)(clock() - st) / CLOCKS_PER_SEC);
